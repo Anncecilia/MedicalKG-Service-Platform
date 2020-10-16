@@ -1,0 +1,28 @@
+server:
+  port: 8077
+  error:
+    whitelabel:
+      enabled: false
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/demo?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    password: 135256
+    username: root
+    driver-class-name: com.mysql.jdbc.Driver
+  mvc:
+    throw-exception-if-no-handler-found: true
+    resources:
+      add-mappings: false
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
+#pagehelper:
+#  reasonable: true
+#  support-methods-arguments: true
+#  params: countsql
+pagehelper:
+  reasonable: true
+  support-methods-arguments: true
+  params: countsql
+  helper-dialect: mysql
+#  helper-dialect: mysql
