@@ -13,9 +13,10 @@ import org.springframework.http.converter.HttpMessageConverter;
 
 import java.util.ArrayList;
 import java.util.List;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
-@SpringBootApplication
-@MapperScan("com.cad.demo.dao")
+@SpringBootApplication(exclude={DataSourceAutoConfiguration.class})
+// @MapperScan("com.cad.demo.dao")
 public class Application {
     public static void main(String[] args) {
         SpringApplication.run(Application.class);
