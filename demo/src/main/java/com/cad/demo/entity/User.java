@@ -26,4 +26,11 @@ public class User {
     private Integer is_deleted;
     private String create_time;
     private String update_time;
+    public String getUname() {
+        return uname;
+    }
+
+    public void setUname(String uname) {
+        this.uname = uname;
+    }
 }
