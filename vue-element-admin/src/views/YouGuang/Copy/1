@@ -1,0 +1,51 @@
+[{
+        id: 1,
+        title: 'G',
+        children: [{
+          id: 5,
+          title: '高血压用药'
+        }]
+      }, {
+        id: 2,
+        title: 'J',
+        children: [{
+          id: 6,
+          title: '疾病'
+        }, {
+          id: 7,
+          title: '疾病大类'
+        }, {
+          id: 8,
+          title: '疾病类型'
+        }]
+      }, {
+        id: 3,
+        title: 'R',
+        children: [{
+          id: 9,
+          title: '人群'
+        }]
+      }, {
+        id: 4,
+        title: 'X',
+        children: [{
+          id: 10,
+          title: '系统疾病'
+        }]
+      }, {
+        id: 5,
+        title: 'Y',
+        children: [{
+          id: 11,
+          title: '药品分类'
+        }, {
+          id: 12,
+          title: '药品化学名'
+        }, {
+          id: 13,
+          title: '药品商品名'
+        }, {
+          id: 14,
+          title: '用药目的'
+        }]
+      }]

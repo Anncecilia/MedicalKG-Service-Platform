@@ -19,7 +19,15 @@ import './permission' // permission control
 import './utils/error-log' // error log
 
 import * as filters from './filters' // global filters
-
+// import 'vue-beauty/package/style/vue-beauty.min.css'
+// import vueBeauty from 'vue-beauty'
+// Vue.use(vueBeauty)
+// import axios from 'axios'
+// Vue.prototype.$ajax = axios
+// import global_ from './Global.vue'
+// Vue.prototype.GLOBAL = global_
+// axios.defaults.baseURL = global_.BASE_URL
+// Vue.prototype.$ajax = axios
 /**
  * If you don't want to use mock-server
  * you want to use MockJs for mock api

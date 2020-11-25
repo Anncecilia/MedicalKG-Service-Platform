@@ -384,7 +384,43 @@ export const asyncRoutes = [
   },
 
   // 404 page must be placed at the end !!!
-  { path: '*', redirect: '/404', hidden: true }
+  { path: '*', redirect: '/404', hidden: true },
+  {
+    path: '/YouGuang',
+    component: Layout,
+    redirect: '/YouGuang/LesMisable',
+    alwaysShow: true,
+    name: 'YouGuang',
+    meta: { title: 'YouGuang', icon: 'theme' },
+    children: [
+      {
+        path: 'ForceChart',
+        component: () => import('@/views/YouGuang/ForceChart'),
+        name: 'ForceChart',
+        meta: { title: 'ForceChart', icon: 'user' },
+        hidden: true
+      },
+      {
+        path: 'ForceChart2',
+        component: () => import('@/views/YouGuang/ForceChart2'),
+        name: 'ForceChart2',
+        meta: { title: 'ForceChart2', icon: 'user' },
+        hidden: true
+      },
+      {
+        path: 'test',
+        component: () => import('@/views/YouGuang/test'),
+        name: 'test',
+        meta: { title: 'test', icon: 'user' }
+      },
+      {
+        path: 'LesMisable',
+        component: () => import('@/views/YouGuang/LesMisable'),
+        name: 'LesMisable',
+        meta: { title: 'LesMisable', icon: 'user' }
+      }
+    ]
+  }
 ]
 
 const createRouter = () => new Router({
