@@ -427,10 +427,19 @@ export default {
       }
     },
     handleNodeClick(data) {
-      this.$router.push({
-        path: 'ForceChart',
-        query: { category: data.label }
-      })
+      var flag = 0
+      for (var d = 0; d < 26; d++) {
+        if (data.label === String.fromCharCode(65 + d)) {
+          flag = 1
+        }
+      }
+      if (flag === 0) {
+        this.$router.push({
+          path: 'ForceChart',
+          query: { category: data.label }
+        })
+      }
+
       // console.log(data.label)
     },
     filterNode(value, data) {
