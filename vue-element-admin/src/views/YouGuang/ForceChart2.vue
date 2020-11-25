@@ -500,6 +500,7 @@ display:inline-block;
 margin-right: 20px;
 padding-left: 4px;
 border-left: 4px solid #336699;
+margin-bottom: 10px;
 /* float: left; */
 }
 .choose{
@@ -514,7 +515,7 @@ border-left: 4px solid  #336699;
 }
 .description{
   height:300px;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-left: 10px;
   margin-right:5px;
   width: 95%;
